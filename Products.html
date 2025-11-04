@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <title>Products and Services</title>
+</head>
+<body>
+    <header class="site-header" role="banner" aria-label="Primary header">
+        <div class="site-brand">
+            <a href="index.html" class="site-title">
+                <img src="img/Nguyen Do Anh Khoa/Artworks/Asset 8-8.png" alt="KOHA" width="50" height="50" style="vertical-align:middle; margin-right:20px;">
+                KOHA
+            </a>
+        </div>
+
+        <!-- menu button (hamburger) shown on small screens -->
+        <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-sidebar">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="Experiences.html">Experience</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sliding sidebar for small screens -->
+    <aside id="site-sidebar" class="site-sidebar" role="dialog" aria-label="Main menu" aria-hidden="true">
+        <button class="close-btn" aria-label="Close menu">×</button>
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
+            <ul>
+                <li><a href="Experiences.html">Experience</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products and Services</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- overlay shown when sidebar is open -->
+    <div class="overlay" hidden></div>
+    
+    <!-- Audio player (enlarged) -->
+    <div class="audio-player" id="audio-player" aria-label="Site audio player">
+        <div class="rotor" id="ap-rotor-wrap"><img id="ap-rotor" src="audio/Royalty Free Music/icons/Untitled-2-02-02.png" alt="player image"></div>
+        <div style="display:flex;flex-direction:column;min-width:0;flex:1;">
+            <div class="title" id="ap-title">No track</div>
+            <div class="progress" aria-hidden="true"><i id="ap-progress"></i></div>
+        </div>
+        <div class="controls">
+            <button class="btn" id="ap-playpause" title="Play/Pause">►</button>
+            <button class="btn" id="ap-next" title="Next">»</button>
+        </div>
+        <audio id="site-audio" preload="auto"></audio>
+    </div>
+
+    <!-- Page content (keep or edit below) -->
+    <main>
+        <section class="products-section-1">
+            <div class="container">
+                <div class="products-grid">
+                    <div class="products-text">
+                        <h1>My Products</h1>
+                        <p>Feel, Experience, Immerse and Navigate through my creative journey. Each piece represents a unique blend of innovation and artistic expression.</p>
+                        <p>From digital artworks to interactive experiences, discover a collection that pushes boundaries and creates meaningful connections.</p>
+                    </div>
+                    <div class="products-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="img/Nguyen Do Anh Khoa/Artworks/Lam va Nau chibi assets-01.png" alt="Product 1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="img/Nguyen Do Anh Khoa/Branding/715de1a8-72a1-4a3e-beff-b43dcacb3ea2.jpg" alt="Product 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="img/Nguyen Do Anh Khoa/Branding/550.png" alt="Product 3">
+                                </div>
+                            </div>
+                            <div class="carousel-nav">
+                                <button class="carousel-prev" aria-label="Previous slide">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="carousel-dots"></div>
+                                <button class="carousel-next" aria-label="Next slide">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <!-- Logo row -->
+        <div class="footer-row">
+            <img src="img/Nguyen Do Anh Khoa/Artworks/Asset 8-8.png" alt="KOHA" width="150" height="150">
+        </div>
+
+        <!-- Rating row -->
+        <div class="footer-row">
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>5.0</span>
+            </div>
+            <div>Rated by clients worldwide</div>
+        </div>
+
+        <!-- Social media row -->
+        <div class="footer-row">
+            <ul class="social-links">
+                <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" target="_blank" title="Behance"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Signature row -->
+        <div class="footer-row">
+            <p class="footer-signature">"An honor to be in your presence" - <strong>KOHA Nguyen</strong></p>
+            <p class="footer-ps">P/S: All music in this Portfolio is Royalty Free Music but contribute to Epidemic Soul</p>
+        </div>
+    </footer>
+
+    <script>
+    // Carousel functionality
+    (function() {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.querySelector('.carousel-next');
+        const prevButton = document.querySelector('.carousel-prev');
+        const dotsNav = document.querySelector('.carousel-dots');
+
+        // Create dot indicators
+        slides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.classList.add('carousel-dot');
+            dot.setAttribute('aria-label', `Slide ${index + 1}`);
+            if (index === 0) dot.classList.add('active');
+            dotsNav.appendChild(dot);
+        });
+
+        const dots = Array.from(dotsNav.children);
+        let currentSlide = 0;
+
+        // Arrange slides next to each other
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        slides.forEach((slide, index) => {
+            slide.style.left = slideWidth * index + 'px';
+        });
+
+        // Move to slide
+        const moveToSlide = (index) => {
+            track.style.transform = `translateX(-${slideWidth * index}px)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+            currentSlide = index;
+        };
+
+        // Next button click
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            moveToSlide(currentSlide);
+        });
+
+        // Previous button click
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            moveToSlide(currentSlide);
+        });
+
+        // Dot indicators click
+        dotsNav.addEventListener('click', e => {
+            const dot = e.target.closest('button');
+            if (!dot) return;
+            
+            const index = dots.findIndex(d => d === dot);
+            moveToSlide(index);
+        });
+
+        // Auto advance slides
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            moveToSlide(currentSlide);
+        }, 5000);
+    })();
+
+    // Menu functionality
+    (function () {
+        const btn = document.querySelector('.menu-btn');
+        const sidebar = document.getElementById('site-sidebar');
+        const overlay = document.querySelector('.overlay');
+
+        if (!btn || !sidebar || !overlay) return;
+
+        function openMenu() {
+            document.body.classList.add('sidebar-open');
+            btn.setAttribute('aria-expanded', 'true');
+            sidebar.setAttribute('aria-hidden', 'false');
+            overlay.hidden = false;
+        }
+
+        function closeMenu() {
+            document.body.classList.remove('sidebar-open');
+            btn.setAttribute('aria-expanded', 'false');
+            sidebar.setAttribute('aria-hidden', 'true');
+            overlay.hidden = true;
+        }
+
+        btn.addEventListener('click', function () {
+            if (document.body.classList.contains('sidebar-open')) closeMenu(); else openMenu();
+        });
+
+        overlay.addEventListener('click', closeMenu);
+
+        const closeBtn = sidebar.querySelector('.close-btn');
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+        // close on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeMenu();
+        });
+    })();
+    </script>
+    <script>
+    // Simple audio player logic: randomized playlist + rotor toggle
+    (function () {
+        const playlist = [
+            "audio/Royalty Free Music/Epidemic Soul/Shy5 - Paradise Im Taking You (Royalty Free Music) [TubeRipper.cc].ogg",
+            "audio/Royalty Free Music/Epidemic Soul/Gloria Tells - See a Brighter Day (Royalty Free Music) [TubeRipper.cc].ogg",
+        ];
+
+        const audio = document.getElementById('site-audio');
+        const playBtn = document.getElementById('ap-playpause');
+        const nextBtn = document.getElementById('ap-next');
+        const titleEl = document.getElementById('ap-title');
+        const progress = document.getElementById('ap-progress');
+        const rotorWrap = document.getElementById('ap-rotor-wrap');
+
+        let idx = Math.floor(Math.random() * playlist.length);
+        let isPlaying = false;
+
+        function setTrack(i) {
+            idx = (i + playlist.length) % playlist.length;
+            audio.src = playlist[idx];
+            const parts = audio.src.split('/');
+            titleEl.textContent = parts[parts.length - 1];
+        }
+
+        function updateRotor() {
+            if (!rotorWrap) return;
+            if (!audio.paused && !audio.ended) rotorWrap.classList.add('rotating'); else rotorWrap.classList.remove('rotating');
+        }
+
+        playBtn.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play().catch(()=>{});
+            } else {
+                audio.pause();
+            }
+        });
+
+        nextBtn.addEventListener('click', function () {
+            let next = Math.floor(Math.random() * playlist.length);
+            if (next === idx && playlist.length > 1) next = (idx + 1) % playlist.length;
+            setTrack(next);
+            audio.play().catch(()=>{});
+        });
+
+        audio.addEventListener('play', function () { isPlaying = true; playBtn.textContent = '❚❚'; updateRotor(); });
+        audio.addEventListener('pause', function () { isPlaying = false; playBtn.textContent = '►'; updateRotor(); });
+        audio.addEventListener('timeupdate', function () {
+            if (!audio.duration) return;
+            const pct = Math.max(0, Math.min(100, (audio.currentTime / audio.duration) * 100));
+            progress.style.width = pct + '%';
+        });
+        audio.addEventListener('ended', function () { // auto-next
+            let next = Math.floor(Math.random() * playlist.length);
+            if (next === idx && playlist.length > 1) next = (idx + 1) % playlist.length;
+            setTrack(next);
+            audio.play().catch(()=>{});
+        });
+
+        // init
+        if (playlist.length) setTrack(idx);
+        // attempt autoplay on load
+        window.addEventListener('load', function () { audio.play().catch(()=>{}); updateRotor(); });
+    })();
+    </script>
+</body>
+</html>

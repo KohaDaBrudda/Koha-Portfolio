@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load Montserrat including the 300 (Light) weight -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <title>KOHA</title>
+</head>
+<body>
+    <header class="site-header" role="banner" aria-label="Primary header">
+        <div class="site-brand">
+            <a href="index.html" class="site-title">
+                <img src="img/Nguyen Do Anh Khoa/Artworks/Asset 8-8.png" alt="KOHA" width="50" height="50" style="vertical-align:middle; margin-right:20px;">
+                KOHA
+            </a>
+        </div>
+
+        <!-- menu button (hamburger) shown on small screens -->
+        <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-sidebar">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="Experiences.html">Experience</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sliding sidebar for small screens -->
+    <aside id="site-sidebar" class="site-sidebar" role="dialog" aria-label="Main menu" aria-hidden="true">
+        <button class="close-btn" aria-label="Close menu">×</button>
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
+            <ul>
+                <li><a href="Experiences.html">Experience</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- overlay shown when sidebar is open -->
+    <div class="overlay" hidden></div>
+    
+    <!-- Audio player (enlarged) -->
+    <div class="audio-player" id="audio-player" aria-label="Site audio player">
+        <div class="rotor" id="ap-rotor-wrap"><img id="ap-rotor" src="audio/Royalty Free Music/icons/Untitled-2-02-02.png" alt="player image"></div>
+        <div style="display:flex;flex-direction:column;min-width:0;flex:1;">
+            <div class="title" id="ap-title">No track</div>
+            <div class="progress" aria-hidden="true"><i id="ap-progress"></i></div>
+        </div>
+        <div class="controls">
+            <button class="btn" id="ap-playpause" title="Play/Pause">►</button>
+            <button class="btn" id="ap-next" title="Next">»</button>
+        </div>
+        <audio id="site-audio" preload="auto"></audio>
+    </div>
+    <section class="section1">
+        <div class="section1-inner">
+            <h2>My greetings to you</h2>
+            <h1>I'm <span class="typed-dynamic" aria-live="polite">KOHA Nguyen</span><span class="cursor" aria-hidden="true">|</span></h1>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left column: image -->
+                <div class="col-md-6 section2-image-col animate-up">
+                    <img src="img/Nguyen Do Anh Khoa/Artworks/c1e06fd9-7a2b-4c36-a791-7de00548b091.jpg" alt="Section image" class="section2-img">
+                </div>
+
+                <!-- Right column: use this bootstrap column to add content -->
+                <div class="col-md-6 section2-content-col animate-up">
+                    <!-- Add your heading, paragraphs or other markup here -->
+                    <div class="p-3">
+                        <h3>About Me</h3>
+                        <p>Experience through practice of creative works, commissions, events, branding as well as social media management.</p>
+                        <p>Skilled in various design software including Adobe Photoshop, Illustrator, After Effects, Premiere Pro, Figma, and more.</p>
+                        <p>Passionate about collaborating on innovative projects that push creative boundaries and deliver impactful results
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <!-- Top row: centered text/content -->
+            <div class="row section3-top">
+                <div class="col-12 d-flex flex-column align-items-center justify-content-center text-center py-5">
+                    <h2 class="section3-title">My Goals</h2>
+                    <p class="section3-lead">To be professional at honing my creative skills in all majors</p>
+                    <p class="section3-lead"> To start a studio of my own and elevate Vietnam's creative works to other parts of the world</p>
+                    <div class="section3-items d-flex gap-3 justify-content-center flex-wrap mt-3">
+                        <!-- Add inline items, badges, or links here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom row: iframe placeholder (add src later) -->
+            <div class="row section3-bottom">
+                <div class="col-12">
+                        <iframe title="Low poly Realistic - Dinosaur Pack" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1920" height="500" src="https://sketchfab.com/models/d552ae0a243e452e88f4e044c8ba39a3/embed?autospin=1&autostart=1&preload=1&transparent=1&ui_theme=dark"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container">
+            <div class="row">
+                <!-- Left column: Skills -->
+                <div class="col-md-6">
+                    <div class="skills-column">
+                        <h2>The skills I offer</h2>
+                        <ul class="skills-list">
+                            <li>Digital Design & Illustration</li>
+                            <li>Web Development & UI/UX Design</li>
+                            <li>Brand Strategy & Identity Design</li>
+                            <li>Motion Graphics & Animation</li>
+                            <li>Video Editing & Post-production</li>
+                            <li>Game Design & Development</li>
+                            <li>3D Modeling & Visualization</li>
+                            <li>Social Media Management</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Right column: Two boxes -->
+                <div class="col-md-6">
+                    <div class="right-boxes">
+                        <!-- Experience Box -->
+                        <a href="Experiences.html" class="box">
+                            <div class="box-image">
+                                <img src="img/Nguyen Do Anh Khoa/Artworks/16dbc479-74c4-4cfb-86ee-706e470c6240.jpg" alt="Experience">
+                            </div>
+                            <div class="box-content">
+                                <h3>Experience</h3>
+                                <span class="chevron-link">View my journey <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Products Box -->
+                        <a href="Products.html" class="box">
+                            <div class="box-image">
+                                <img src="img/Nguyen Do Anh Khoa/Artworks/Bảng thông tin-01.png" alt="Products">
+                            </div>
+                            <div class="box-content">
+                                <h3>Products</h3>
+                                <span class="chevron-link">Explore my work <i class="fas fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <!-- Logo row -->
+        <div class="footer-row footer-logo">
+            <img src="img/Nguyen Do Anh Khoa/Artworks/Asset 8-8.png" alt="KOHA">
+        </div>
+
+        <!-- Rating row -->
+        <div class="footer-row">
+            <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="rating-count">Rated 4.0 by clients worldwide</div>
+        </div>
+
+        <!-- Social media row -->
+        <div class="footer-row">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/nguyen.o.anh.khoa.537656" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/kohayoshikage2004" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.behance.net/anhkhoanguyendo" target="_blank" title="Behance"><i class="fab fa-behance"></i></a></li>
+                <li><a href="https://github.com/KohaDaBrudda" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Signature row -->
+        <div class="footer-row">
+            <p class="footer-signature">"An honor to be in your presence" - <strong>KOHA Nguyen</strong></p>
+            <p class="footer-ps">P/S: All music in this Portfolio is Royalty Free Music but contribute to Epidemic Soul</p>
+        </div>
+    </footer>
+</body>
+    <script>
+    (function () {
+        const btn = document.querySelector('.menu-btn');
+        const sidebar = document.getElementById('site-sidebar');
+        const overlay = document.querySelector('.overlay');
+
+        if (!btn || !sidebar || !overlay) return;
+
+        function openMenu() {
+            document.body.classList.add('sidebar-open');
+            btn.setAttribute('aria-expanded', 'true');
+            sidebar.setAttribute('aria-hidden', 'false');
+            overlay.hidden = false;
+        }
+
+        function closeMenu() {
+            document.body.classList.remove('sidebar-open');
+            btn.setAttribute('aria-expanded', 'false');
+            sidebar.setAttribute('aria-hidden', 'true');
+            overlay.hidden = true;
+        }
+
+        btn.addEventListener('click', function () {
+            if (document.body.classList.contains('sidebar-open')) closeMenu(); else openMenu();
+        });
+
+        overlay.addEventListener('click', closeMenu);
+
+        const closeBtn = sidebar.querySelector('.close-btn');
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+        // close on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeMenu();
+        });
+    })();
+    </script>
+    <script>
+    // Simple audio player logic: randomized playlist + rotor toggle
+    (function () {
+        const playlist = [
+            "audio/Royalty Free Music/Epidemic Soul/Shy5 - Paradise Im Taking You (Royalty Free Music) [TubeRipper.cc].ogg",
+            "audio/Royalty Free Music/Epidemic Soul/Gloria Tells - See a Brighter Day (Royalty Free Music) [TubeRipper.cc].ogg",
+        ];
+
+        const audio = document.getElementById('site-audio');
+        const playBtn = document.getElementById('ap-playpause');
+        const nextBtn = document.getElementById('ap-next');
+        const titleEl = document.getElementById('ap-title');
+        const progress = document.getElementById('ap-progress');
+        const rotorWrap = document.getElementById('ap-rotor-wrap');
+
+        let idx = Math.floor(Math.random() * playlist.length);
+        let isPlaying = false;
+
+        function setTrack(i) {
+            idx = (i + playlist.length) % playlist.length;
+            audio.src = playlist[idx];
+            const parts = audio.src.split('/');
+            titleEl.textContent = parts[parts.length - 1];
+        }
+
+        function updateRotor() {
+            if (!rotorWrap) return;
+            if (!audio.paused && !audio.ended) rotorWrap.classList.add('rotating'); else rotorWrap.classList.remove('rotating');
+        }
+
+        playBtn.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play().catch(()=>{});
+            } else {
+                audio.pause();
+            }
+        });
+
+        nextBtn.addEventListener('click', function () {
+            let next = Math.floor(Math.random() * playlist.length);
+            if (next === idx && playlist.length > 1) next = (idx + 1) % playlist.length;
+            setTrack(next);
+            audio.play().catch(()=>{});
+        });
+
+        audio.addEventListener('play', function () { isPlaying = true; playBtn.textContent = '❚❚'; updateRotor(); });
+        audio.addEventListener('pause', function () { isPlaying = false; playBtn.textContent = '►'; updateRotor(); });
+        audio.addEventListener('timeupdate', function () {
+            if (!audio.duration) return;
+            const pct = Math.max(0, Math.min(100, (audio.currentTime / audio.duration) * 100));
+            progress.style.width = pct + '%';
+        });
+        audio.addEventListener('ended', function () { // auto-next
+            let next = Math.floor(Math.random() * playlist.length);
+            if (next === idx && playlist.length > 1) next = (idx + 1) % playlist.length;
+            setTrack(next);
+            audio.play().catch(()=>{});
+        });
+
+        // init
+        if (playlist.length) setTrack(idx);
+        // attempt autoplay on load
+        window.addEventListener('load', function () { audio.play().catch(()=>{}); updateRotor(); });
+    })();
+    </script>
+    <script>
+    // Typewriter effect: starts after 5 seconds, then cycles through phrases
+    (function () {
+        const el = document.querySelector('.typed-dynamic');
+        const cursor = document.querySelector('.cursor');
+        if (!el) return;
+
+        const words = [
+            'a Digital Designer',
+            'a Web Developer',
+            'a Brand Strategist',
+            'a UX/UI Coder',
+            'an Animator',
+            'a Game Developer',
+            'a Video Editor',
+            'a Creator',
+            'an International Collaborator',
+            'KOHA Nguyen'
+        ];
+
+        const typeSpeed = 90;
+        const eraseSpeed = 40;
+        const pauseAfter = 1400; // pause after typing a word
+        let wordIndex = 0;
+
+        function eraseThenType() {
+            // erase current content, then type next word
+            const current = el.textContent || '';
+            if (current.length > 0) {
+                el.textContent = current.substring(0, current.length - 1);
+                setTimeout(eraseThenType, eraseSpeed);
+                return;
+            }
+            // start typing next word
+            const word = words[wordIndex];
+            let i = 0;
+            function typeChar() {
+                if (i < word.length) {
+                    el.textContent += word.charAt(i++);
+                    setTimeout(typeChar, typeSpeed);
+                } else {
+                    // finished typing, pause then erase
+                    setTimeout(() => {
+                        wordIndex = (wordIndex + 1) % words.length;
+                        eraseThenType();
+                    }, pauseAfter);
+                }
+            }
+            typeChar();
+        }
+
+        // start after 5 seconds (5000ms)
+        setTimeout(eraseThenType, 5000);
+    })();
+    </script>
+    <script>
+    // Observe Section 2 and trigger ascend animation on children with .animate-up
+    (function () {
+        const section = document.querySelector('.section2');
+        if (!section) return;
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    section.querySelectorAll('.animate-up').forEach(el => el.classList.add('in-view'));
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+
+        observer.observe(section);
+    })();
+    </script>
+</html>
